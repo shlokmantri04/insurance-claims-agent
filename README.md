@@ -38,7 +38,6 @@ The final result is returned in JSON format containing:
 
 ---------------
 
----------------
 
 ## 🚀 Steps to Run (Windows + Mac/Linux)
 
@@ -75,6 +74,7 @@ OR you can select a PDF available in the `data/` folder:
 ```python
 file_path = "data/sample_fnol.pdf"
 ```
+
 
 #### ✅ 6) Run the Project
 ```bash
