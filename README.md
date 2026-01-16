@@ -38,105 +38,92 @@ The final result is returned in JSON format containing:
 
 ---------------
 
-🚀 Steps to Run (Windows + Mac/Linux)
+---------------
 
- 🪟 Windows Setup & Run
+## 🚀 Steps to Run (Windows + Mac/Linux)
 
-✅ 1) Open the Project Folder in Terminal
+### 🪟 Windows Setup & Run
 
+#### ✅ 1) Open the Project Folder in Terminal
 Example:
-
+```bash
 cd D:\insurance-claims-agent
+```
 
-
-✅ 2) Create a Virtual Environment
-
+#### ✅ 2) Create a Virtual Environment
+```bash
 python -m venv venv
+```
 
-
-✅ 3) Activate the Virtual Environment
-
+#### ✅ 3) Activate the Virtual Environment
+```bash
 venv\Scripts\activate
+```
+You should see: `(venv)`
 
-
-You should see:
-
-(venv)
-
-
-✅ 4) Install Dependencies
-
+#### ✅ 4) Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
-
-✅ 5) Select an Input File
-Open src/main.py and set:
-
+#### ✅ 5) Select an Input File
+Open `src/main.py` and set:
+```python
 file_path = "data/test_cases/case1_fasttrack.txt"
-
-
-OR you can select a PDF available in the data/ folder:
-
+```
+OR you can select a PDF available in the `data/` folder:
+```python
 file_path = "data/sample_fnol.pdf"
+```
 
-
-✅ 6) Run the Project
-
+#### ✅ 6) Run the Project
+```bash
 python src/main.py
+```
 
+#### ✅ 7) Output
+The result will be printed in the terminal and saved to: `output/result.json`
 
-✅ 7) Output
-The result will be printed in the terminal and saved to:
+---
 
-output/result.json
+### 🍎 Mac / Linux Setup & Run
 
-
-🍎 Mac / Linux Setup & Run
-
-✅ 1) Open the Project Folder in Terminal
-
+#### ✅ 1) Open the Project Folder in Terminal
 Example:
-
+```bash
 cd ~/Desktop/insurance-claims-agent
+```
 
-
-✅ 2) Create a Virtual Environment
-
+#### ✅ 2) Create a Virtual Environment
+```bash
 python3 -m venv venv
+```
 
-
-✅ 3) Activate the Virtual Environment
-
+#### ✅ 3) Activate the Virtual Environment
+```bash
 source venv/bin/activate
+```
+You should see: `(venv)`
 
-
-You should see:
-
-(venv)
-
-
-✅ 4) Install Dependencies
-
+#### ✅ 4) Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
-
-✅ 5) Select an Input File
-Open src/main.py and set:
-
+#### ✅ 5) Select an Input File
+Open `src/main.py` and set:
+```python
 file_path = "data/test_cases/case1_fasttrack.txt"
-
-
-OR you can select a PDF available in the data/ folder:
-
+```
+OR you can select a PDF available in the `data/` folder:
+```python
 file_path = "data/sample_fnol.pdf"
+```
 
+#### ✅ 6) Run the Project
+```bash
+python src/main.py
+```
 
-✅ 6) Run the Project
-
-python3 src/main.py
-
-
-✅ 7) Output
-The result will be printed in the terminal and saved to:
-
-output/result.json
+#### ✅ 7) Output
+The result will be printed in the terminal and saved to: `output/result.json`
