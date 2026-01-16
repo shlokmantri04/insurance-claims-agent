@@ -1,0 +1,15 @@
+Policy Number: POL-1004
+Policyholder Name: Neha Singh
+
+Date of Loss: 01/15/2026
+Time of Loss: 09:00 AM
+Location: Delhi, India
+
+Description: Collision with another vehicle. Passenger suffered leg injury.
+Claim Type: injury
+
+Asset Type: Car
+Asset ID: DL01PQ4321
+Estimated Damage: 22000
+Attachments: Medical Reports, Photos
+Initial Estimate: 22000

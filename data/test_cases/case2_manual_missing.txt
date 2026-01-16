@@ -1,0 +1,14 @@
+Policy Number: POL-1002
+Policyholder Name: Rahul Sharma
+
+Date of Loss: 01/12/2026
+Time of Loss: 06:15 PM
+Location: Mumbai, Maharashtra, India
+
+Description: Car scratched while parked.
+Claim Type: vehicle
+
+Asset Type: Car
+Asset ID: MH01XY7788
+Attachments: Photos
+Initial Estimate: 5000

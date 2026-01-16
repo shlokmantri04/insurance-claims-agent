@@ -1,0 +1,15 @@
+Policy Number: POL-1003
+Policyholder Name: Amit Verma
+
+Date of Loss: 01/14/2026
+Time of Loss: 01:10 AM
+Location: Nagpur, Maharashtra, India
+
+Description: Accident seems staged and inconsistent. Possible fraud involved.
+Claim Type: vehicle
+
+Asset Type: Car
+Asset ID: MH31CD9999
+Estimated Damage: 40000
+Attachments: Photos
+Initial Estimate: 40000

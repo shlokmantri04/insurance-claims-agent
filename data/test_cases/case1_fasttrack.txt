@@ -1,0 +1,16 @@
+Policy Number: POL-1001
+Policyholder Name: Shlok Patil
+Effective Dates: 01/01/2026 - 01/01/2027
+
+Date of Loss: 01/10/2026
+Time of Loss: 10:30 PM
+Location: Pune, Maharashtra, India
+
+Description: Rear-end collision at traffic signal. No injury.
+Claim Type: vehicle
+
+Asset Type: Car
+Asset ID: MH12AB1234
+Estimated Damage: 18000
+Attachments: Photos, Police Report
+Initial Estimate: 18000
