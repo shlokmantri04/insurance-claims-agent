@@ -1,16 +1,23 @@
 import re
 
 def get_value(label: str, text: str):
-    pattern = rf"{label}\s*:\s*(.+)"
-    match = re.search(pattern, text, re.IGNORECASE)
-    if match:
-        return match.group(1).strip()
-    return None
+    # ✅ Only capture text on the same line after "Label:"
+    pattern = rf"^{re.escape(label)}\s*:\s*([^\n\r]*)$"
+    match = re.search(pattern, text, re.IGNORECASE | re.MULTILINE)
 
+    if not match:
+        return None
+
+    value = match.group(1).strip()
+
+    if value == "" or value.lower() in ["na", "n/a", "none", "null", "-"]:
+        return None
+
+    return value
 def extract_fields(text: str) -> dict:
     extracted = {}
 
-    # ✅ TXT style extraction
+    # TXT style extraction
     extracted["policyNumber"] = get_value("Policy Number", text)
     extracted["policyholderName"] = get_value("Policyholder Name", text)
 
@@ -28,7 +35,7 @@ def extract_fields(text: str) -> dict:
     extracted["assetType"] = get_value("Asset Type", text)
     extracted["assetId"] = get_value("Asset ID", text)
 
-    # ✅ PDF fallback (ACORD blank template will still give None - correct)
+    # PDF fallback (ACORD blank template will still give None - correct)
     if extracted["policyNumber"] is None and "AUTOMOBILE LOSS NOTICE" in text:
         match_damage = re.search(r"ESTIMATE AMOUNT[:\s]*\$?\s*([\d,]+)", text, re.IGNORECASE)
         if match_damage:

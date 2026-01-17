@@ -41,15 +41,16 @@ The final result is returned in JSON format containing:
 
 ## 🚀 Steps to Run (Windows + Mac/Linux)
 
-### 🪟 Windows Setup & Run
-
-#### ✅ 1) Open the Project Folder in Terminal
-Example:
+### 📥 Clone the Repository
+First, clone the repository to your local machine:
 ```bash
-cd D:\insurance-claims-agent
+git clone https://github.com/shlokmantri04/insurance-claims-agent.git
+cd insurance-claims-agent
 ```
 
-#### ✅ 2) Create a Virtual Environment
+### 🪟 Windows Setup & Run
+
+#### ✅ 1) Create a Virtual Environment
 ```bash
 python -m venv venv
 ```
